@@ -1,3 +1,11 @@
+"""
+Rede Perceptron
+
+@author Caio Tomich (caiotomich@gmail.com)
+@version 1.0.0
+@since 2019-08-27;
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
