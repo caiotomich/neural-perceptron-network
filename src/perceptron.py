@@ -49,12 +49,15 @@ print("End Weight:", w)
 print("Epoch:", epoch)
 
 plt.plot(np.arange(epoch), np.array(weight))
+plt.title('Weight x Epoch')
+plt.xlabel('Epoch')
+plt.ylabel('Weight')
 plt.show()
 
 
 print("\n --- Test Script --- \n")
 
-validation_data = np.genfromtxt('docs/validation_data.txt', skip_header=False)
+validation_data = np.genfromtxt('../docs/validation_data.txt', skip_header=False)
 
 w_after_training = weight
 t = np.full(len(validation_data), -1)
